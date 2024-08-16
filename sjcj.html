@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数据采集</title>
+<style>
+    :root {
+        --primary-color: #c02000;
+        --secondary-color: #660099;
+        --text-color: #330000;
+        --button-bg: #fff;
+        --button-bg-hover: #ededed;
+        --button-text: #606060;
+        --button-border: #b7b7b7;
+        --button-shadow: rgba(0, 0, 0, .2);
+        --bg-color: #f0f2f5;
+        --container-bg: #fff;
+        --container-shadow: rgba(0, 0, 0, .1);
+    }
+
+    body {
+        font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif;
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 960px;
+        padding: 20px;
+        background: var(--container-bg);
+        box-shadow: 0 4px 8px var(--container-shadow);
+        border-radius: 8px;
+    }
+
+    h1 {
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .section p {
+        color: var(--text-color);
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .button {
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        padding: .7em 2em;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        border-radius: 2em;
+        box-shadow: 0 1px 2px var(--button-shadow);
+        border: solid 1px var(--button-border);
+        background: var(--button-bg);
+        background: linear-gradient(to bottom, var(--button-bg), var(--button-bg-hover));
+        color: var(--button-text);
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+        background: var(--button-bg-hover);
+        background: linear-gradient(to bottom, var(--button-bg), #dcdcdc);
+    }
+
+    .button:active {
+        transform: translateY(1px);
+    }
+
+    .button.primary {
+        color: var(--primary-color);
+    }
+
+    .button.secondary {
+        color: var(--secondary-color);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <p>室温采集</p>
+        <div class="buttons">
+            <a href="https://www.grphtk.site:9901/data" class="button primary">室温采集(普赛)</a>
+            <a href="http://cloud.shuoren.com" class="button secondary">硕人云</a>
+            <a href="http://114.115.162.238:8003" class="button secondary">领图云</a>
+        </div>
+    </div>
+    <div class="section">
+        <p>居民热表系统</p>
+        <div class="buttons">
+            <a href="http://115.28.164.32/" class="button primary">居民热表(格伦沃德)</a>
+            <a href="http://heat.plou.cn/" class="button secondary">红岛壹号院</a>
+        </div>
+    </div>
+    <div class="section">
+        <p>保护&报警</p>
+        <div class="buttons">
+            <a href="http://huanya.sxspcp.com" class="button primary">阴极保护</a>                  
+            <a href="https://www.grphtk.site:9901/data" class="button secondary">管网报警(普赛)</a>
+            <a href="http://116.62.61.36/User/Login" class="button secondary">管网报警(旧)</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

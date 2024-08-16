@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>金海导航</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: Verdana, Arial, sans-serif;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: #f0f2f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding-top: 20px; /* 增加顶部空间，整体上移内容 */
+    }
+    .container {
+        width: 100%;
+        max-width: 960px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    .category {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 自动适应宽度，最小宽度250px */
+        gap: 30px; /* 列之间的间距 */
+    }
+    .list {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .list h3 {
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+        font-size: 16px;
+    }
+    .list ul {
+        list-style: none;
+        padding: 0;
+    }
+    .list li {
+        margin-bottom: 5px;
+    }
+    .list a {
+        color: #007BFF;
+        display: block;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .list a:hover {
+        background-color: #f0f0f0;
+        text-decoration: none;
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #666;
+        margin-top: 20px;
+    }
+    .header {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed; /* 固定在页面顶部 */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* 提高层级，确保在内容上方显示 */
+    }
+    .weather-info {
+        width: 170px;
+        height: 20px;
+        border: none;
+    }
+    .logo-and-weather {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px; /* 调整图片下方的空间 */
+        width: 100%;
+        max-width: 960px;
+    }
+    .logo {
+        max-width: calc(15% - 10px); /* 让图片占一半宽度 */
+    }
+    .logo img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .popup {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        z-index: 2000;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+    .popup.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .popup-header h4 {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+    .popup-close {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .popup-content {
+        font-size: 14px;
+        color: #555;
+    } 
+    
+</style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="logo-and-weather">
+        <div class="logo">
+            <a href="./index0.html" target="_blank">
+            <img src="./jh.png" alt="金海导航"></a>
+        </div>
+
+		
+
+		
+	<iframe width="200" height="60" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=87&icon=1"></iframe>  
+	<!-- 	<iframe width="250" height="60" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=94&icon=1"></iframe>  -->
+		
+    </div>
+    <div class="category">
+        <div class="list">
+            <h3 class='title'>不忘初心</h3>
+            <ul>
+                <li><a href='./bbs/' target='_blank'>金海论坛</a></li>
+                <li><a href='.\jk' target='_blank'>视频检测</a></li>
+                <li><a href='https://pc.xuexi.cn/points/login.html?ref=https%3A%2F%2Fwww.xuexi.cn%2F' target='_blank'>学习强国</a></li>
+                <li><a href='http://forecast.weather.com.cn/town/weather1dn/101120201026.shtml#input' target='_blank'>城阳天气</a></li>
+                <li><a href='.\qx.html' target='_blank'>气象预报</a></li>
+                <li><a href='.\tool.html' target='_blank'>工具箱</a></li>			
+            </ul>
+        </div>
+        
+        <div class="list">
+            <h3 class='title'>热网热表</h3>
+            <ul>
+                <li><a href='http://222.173.101.50:5300/login1.asp' target='_blank'>金海热网</a></li>
+                <li><a href='http://202.136.50.123:5015' target='_blank'>PVSS系统</a></li>
+                <li><a href='http://199.182.220.161:84/login.html' target='_blank'>GIS系统</a></li>
+                <li><a href='http://202.136.50.123:88' target='_blank'>巡检系统</a></li>
+                <li><a href='http://219.146.91.67:9000' target='_blank'>设备管理</a></li>		
+                <li><a href='http://202.136.50.124:5000' target='_blank'>深信服云热网(测试)</a></li>				
+            </ul>
+        </div>
+        <div class="list">
+            <h3 class='title'>办公网络</h3>
+            <ul>
+                <li><a href='OA.html' target='_blank'>OA系统</a></li>
+                <li><a href='kefu.html' target='_blank'>客服系统</a></li>
+                <li><a href='http://219.146.91.67:8088/bid2' target='_blank'>招投标</a></li>
+                <li><a href='http://219.146.91.67:8088/bid2/login/userLogin' target='_blank'>电子采购</a></li>
+                <li><a href='http://srm.qdnyjt.com' target='_blank'>物资采购</a></li>
+                <li><a href='https://etax.qingdao.chinatax.gov.cn:7553/sso/login?service=https%3A%2F%2Fetax.qingdao.chinatax.gov.cn%2Fportal%2F' target='_blank'>电子税务</a></li>
+	
+            </ul>
+        </div>
+        
+        <div class="list">
+            <h3 class='title'>邮箱服务</h3>
+            <ul>
+                <li><a href='http://email.163.com/' target='_blank'>网易邮箱</a></li>
+                <li><a href='https://mail.qq.com/' target='_blank'>腾讯邮箱</a></li>				
+                <li><a href='http://www.qdgjj.com/' target='_blank'>公积金网</a></li>
+                <li><a href='http://hrss.shandong.gov.cn/rsrc/ww/login_gg.html' target='_blank'>山东人事</a></li>
+                <li><a href='http://hrss.qingdao.gov.cn' target='_blank'>人社局</a></li>
+                <li><a href='https://www.chsi.com.cn/' target='_blank'>学信网</a></li>
+            </ul>
+        </div>
+        
+        <div class="list">
+            <h3 class='title'>能源计量</h3>
+            <ul>
+                <li><a href='http://www.qdjly.cn/' target='_blank'>青岛计量院</a></li>
+                <li><a href='http://psp.e-cqs.cn/egov/info-imanage-image.html?itemId=jlqjxt' target='_blank'>中国质监局</a></li>
+                <li><a href='http://www.nhzx365.com/' target='_blank'>计量审查</a></li>		
+                <li><a href='https://www.liantu.com/' target='_blank'>二维码</a></li>	
+                <li><a href='https://www.biaozhun.org/' target='_blank'>标准网</a></li>	
+            </ul>
+        </div>
+        
+        <div class="list">
+            <h3 class='title'>数据采集</h3>
+            <ul>
+                <li><a href='https://www.grphtk.site:9901/data/' target='_blank'>室温采集(普赛)</a></li>
+                <li><a href='https://cloud.shuoren.com/#/sign_in' target='_blank'>室温采集(北京硕人)</a></li>
+                <li><a href='http://115.28.164.32/' target='_blank'>居民热表(格伦沃德)</a></li>
+                <li><a href='https://heat.plou.cn/#/home' target='_blank'>居民热表(天罡)</a></li>
+                <li><a href='http://huanya.sxspcp.com/'>阴极保护</a></li>
+            </ul>
+        </div>  
+        
+        <div class="list">
+            <h3 class='title'>其他平台</h3>
+            <ul>
+                <li><a href='http://219.146.91.68:2077/IntellSecurity-web' target='_blank'>智慧安全平台</a></li>
+                <li><a href='http://222.173.101.50:8060/data/index.html' target='_blank'>普赛历史数据</a></li>
+                <li><a href='http://116.62.61.36/User/Login' target='_blank'>管网报警(旧)</a></li>
+            </ul>
+        </div>        
+        <div class="list">
+            <h3 class='title'>名站资讯</h3>
+            <ul>
+                <li><a href='http://www.qingdao.gov.cn/n172/' target='_blank'>青岛政务网</a></li>
+                <li><a href='http://msdn.itellyou.cn/' target='_blank'>msdn</a></li>
+                <li><a href='./game' target='_blank'>益智类</a></li>
+                <li><a href='https://www.speedtest.net/' target='_blank'>speedtest</a></li>        
+            </ul>
+        </div>        
+    </div>
+</div>
+
+<div class="footer">
+    <p>Copyright &copy; <a href="#">金海热电</a> Powered by 王晓杰</p>
+    <p>如需添加或修改网址，请联系我</p>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-header">
+        <h4>温馨提示</h4>
+        <span class="popup-close" onclick="togglePopup()">&times;</span>
+    </div>
+    <div class="popup-content">
+        点击“青岛能源”图标可返回原导航页面
+    </div>
+</div>
+
+<script>
+    function togglePopup() {
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('show');
+        if (popup.classList.contains('show')) {
+            setTimeout(function() {
+                popup.classList.remove('show');
+            }, 20000); // 10秒后自动关闭
+        }
+    }
+
+    window.onload = function() {
+        setTimeout(function() {
+            togglePopup();
+        }, 1000); // 页面加载后1秒显示弹窗
+    }
+</script>
+
+</body>
+</html>
